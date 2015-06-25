@@ -1,0 +1,8 @@
+restart.sh
+venv
+env
+*.pyc
+staticfiles
+db.sqlite3
+.idea
+*~
