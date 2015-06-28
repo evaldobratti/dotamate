@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" ng-app="{% block ng_app %} dotamate.index {% endblock %}">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap-theme.css' %}" />
+    <script type="text/javascript" src="{% static 'web/js/jquery-2.1.4.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/js/alert.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/js/transition.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/angular/angular.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/apps/match.js' %}"></script>
+    <title>lel</title>
+</head>
+
+<body ng-controller="{% block ng_controller %} {% endblock %}" class="body">
+    <div id="header">
+        {% block header %}
+        header
+	    {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}
+        content
+        {% endblock %}
+    </div>
+
+    <div id="footer">
+        {% block footer %}
+        footer
+            Dota 2 is a registered trademark of Valve Corporation.
+        {% endblock %}
+    </div>
+</body>
+
+</html>
